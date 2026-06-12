@@ -18,12 +18,12 @@ Proyek ini dibuat sebagai sarana belajar pengembangan web full-stack, mulai dari
 * Profil pengguna
 * Dark Mode
 * Responsive Design
-
+* Pencarian video
+  
 ---
 
 ## 🚀 Fitur yang Akan Datang
 
-* Pencarian video
 * Sistem komentar
 * Sistem like
 * Foto profil pengguna
