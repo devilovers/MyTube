@@ -100,20 +100,46 @@ $total_video = mysqli_num_rows($videos);
                 <?php while($video = mysqli_fetch_assoc($videos)): ?>
                     <div class="group bg-white/80 dark:bg-zinc-800/40 rounded-3xl overflow-hidden shadow-md hover:shadow-xl border border-zinc-100 dark:border-zinc-800/50 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between backdrop-blur-sm">
                         
-                        <a href="watching.php?id=<?= $video['id'] ?>" class="block relative aspect-video overflow-hidden bg-zinc-900">
-                            <img
-                                src="<?= htmlspecialchars($video['thumbnail']) ?>"
-                                alt="<?= htmlspecialchars($video['judul']) ?>"
-                                loading="lazy"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <a href="watching.php?id=<?= $video['id'] ?>" class="block relative overflow-hidden aspect-video w-full bg-pink-500 flex items-center justify-center transition-all duration-300 select-none">
                             
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                                <span class="text-xs font-bold text-white tracking-wide bg-pink-500/90 backdrop-blur-md px-2.5 py-1 rounded-xl flex items-center gap-1">
-                                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
-                                    </svg> Watch Now
-                                </span>
-                            </div>
+                            <?php 
+                                // Menggunakan ID video untuk membagi jenis love agar bentuknya bervariasi secara otomatis seperti di blush.php
+                                $loveSeed = isset($video['id']) ? (int)$video['id'] % 4 : rand(0, 3);
+                                
+                                if ($loveSeed === 0): 
+                            ?>
+                                <svg class="w-14 h-14 text-white transform group-hover:scale-110 transition duration-500 filter drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                </svg>
+
+                            <?php elseif ($loveSeed === 1): ?>
+                                <div class="relative flex items-center justify-center">
+                                    <svg class="w-14 h-14 text-white transform group-hover:scale-110 transition duration-500 filter drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                    <svg class="w-6 h-6 text-pink-200 absolute -top-1 -right-2 animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 12l-1.5-4.5L3 6l4.5-1.5L9 0l1.5 4.5L15 6l-4.5 1.5L9 12z"/>
+                                    </svg>
+                                </div>
+
+                            <?php elseif ($loveSeed === 2): ?>
+                                <svg class="w-14 h-14 text-white animate-pulse transform group-hover:scale-110 transition duration-500 filter drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                </svg>
+
+                            <?php else: ?>
+                                <div class="relative w-16 h-16 flex items-center justify-center">
+                                    <svg class="w-12 h-12 text-white absolute bottom-1 left-1 transform group-hover:translate-x-1 transition duration-500 filter drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                    <svg class="w-8 h-8 text-pink-200/90 absolute top-1 right-1 transform group-hover:-translate-y-1 transition duration-500" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </div>
+                            <?php endif; ?>
+                            
+                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
                         </a>
 
                         <div class="p-5 flex-1 flex flex-col justify-between gap-2">
