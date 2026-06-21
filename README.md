@@ -1,157 +1,99 @@
-# 💖 MyTube V.1
+<h1 align="center">
+  🎬 MyTube V1.0
+</h1>
 
-MyTube V.1 adalah platform berbagi video sederhana yang terinspirasi dari YouTube dan dibangun menggunakan **PHP Native**, **MySQL**, dan **Tailwind CSS**.
+<p align="center">
+  A modern video sharing platform built with PHP and MySQL inspired by YouTube.
+</p>
 
-Proyek ini dibuat sebagai sarana belajar pengembangan web full-stack, mulai dari autentikasi pengguna, pengelolaan database, operasi CRUD, hingga pembuatan antarmuka yang responsif.
-
----
-
-## ✨ Fitur Saat Ini
-
-* Registrasi akun
-* Login & Logout
-* Upload video YouTube
-* Thumbnail otomatis
-* Halaman tonton video
-* Edit video
-* Hapus video
-* Profil pengguna
-* Dark Mode
-* Responsive Design
-* Pencarian video
-* Sistem komentar
----
-
-## 🚀 Fitur yang Akan Datang
-
-* Sistem like
-* Halaman channel
-* Kategori video
-* Jumlah tayangan
-* Dashboard pengguna
-* Peningkatan UI/UX
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-8-blue?style=for-the-badge&logo=php">
+  <img src="https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+</p>
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## ✨ About Project
+
+MyTube is a video sharing platform inspired by YouTube and built as part of my learning journey in web development using PHP and MySQL.
+
+The application allows users to upload, browse, and watch videos through a simple and modern interface.
+
+---
+
+## 🚀 Features
+
+* 🔐 User authentication
+* 🎥 Video upload system
+* ▶️ Watch videos
+* 👤 User profiles
+* 📱 Responsive interface
+* 💾 MySQL database integration
+
+---
+
+## 🛠️ Built With
 
 * PHP Native
 * MySQL
-* Tailwind CSS
+* HTML5
+* CSS3
 * JavaScript
 * XAMPP
 
 ---
 
-## 📂 Struktur Proyek
+## 📸 Screenshots
 
-```text
-mytube/
+### Home Page
 
-├── blush.php                  (Home)
+<p align="center">
+  <img src="Screenshots/blush.png" width="900">
+</p>
 
-├── glam/
-│   ├── darling.php            (Login)
-│   ├── pinky.php              (Register)
-│   └── bye_babe.php           (Logout)
+### Watching Page
 
-├── pretty/
-│   ├── sparkle.php            (Upload)
-│   ├── vanity.php             (Edit)
-│   ├── watching.php           (Watch)
-│   └── profile.php            (Profile)
-
-├── sugar/
-│   └── heartlink.php          (Database)
-
-├── cotton/
-│   └── snippets/
-│       ├── crown.php          (Header)
-│       ├── ribbon.php         (Navbar)
-│       └── footerkiss.php     (Footer)
-
-└── cherry.sql                (Schema)
-```
+<p align="center">
+  <img src="Screenshots/watching.png" width="900">
+</p>
 
 ---
 
-## ⚙️ Cara Menjalankan Proyek
-
-### 1. Clone Repository
+## 📂 Project Structure
 
 ```bash
-git clone https://github.com/devilovers/mytube.git
-```
-
-### 2. Letakkan di Folder XAMPP
-
-Pindahkan folder proyek ke:
-
-```text
-xampp/htdocs/
-```
-
-### 3. Buat Database
-
-Buat database baru dengan nama:
-
-```sql
-pinkvault
-```
-
-Lalu import file:
-
-```text
-cherry.sql
-```
-
-### 4. Konfigurasi Database
-
-Buka file:
-
-```text
-sugar/heartlink.php
-```
-
-Sesuaikan konfigurasi database jika diperlukan.
-
-### 5. Jalankan Aplikasi
-
-Aktifkan:
-
-* Apache
-* MySQL
-
-Kemudian buka:
-
-```text
-http://localhost/mytube
+mytube/
+│
+├── Screenshots/
+│   ├── blush.png
+│   └── watching.png
+├── assets/
+├── uploads/
+├── index.php
+├── watch.php
+└── README.md
 ```
 
 ---
 
-## 🎯 Tujuan Pengembangan
+## 🎯 Learning Goals
 
-Proyek ini dibuat untuk mempelajari:
-
-* PHP Native
-* MySQL Database
-* Sistem Autentikasi
-* Operasi CRUD
-* Responsive Web Design
-* Git & GitHub
-* Full-Stack Development
+* Understanding PHP and MySQL integration
+* Learning authentication and file uploads
+* Practicing database management
+* Building a complete web application from scratch
 
 ---
 
-## 📌 Status Proyek
-
-🚧 Masih dalam tahap pengembangan aktif.
-
-Fitur, struktur folder, dan tampilan dapat berubah sewaktu-waktu seiring proses pengembangan dan pembelajaran.
-
----
-
-## 👩‍💻 Pengembang
+## 👩🏻‍💻 Author
 
 **Nur Islami Sabila**
+
+Frontend Developer & Informatics Student Candidate from Indonesia 🇮🇩
+
+> "Learning by building, growing by creating."
+
+---
+
+⭐ If you like this project, don't forget to give it a star.
