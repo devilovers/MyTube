@@ -49,7 +49,7 @@ The application allows users to upload, browse, and watch videos through a simpl
 ### Home Page
 
 <p align="center">
-  <img src="Screenshots/blush.png" width="900">
+  <img src="Screenshots/home.png" width="900">
 </p>
 
 ### Watching Page
