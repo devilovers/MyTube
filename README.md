@@ -27,7 +27,9 @@ The application allows users to upload, browse, and watch videos through a simpl
 * 🔐 User authentication
 * 🎥 Video upload system
 * ▶️ Watch videos
+* 💬 Comment on videos
 * 👤 User profiles
+* 🌙 Switch between dark and light mode
 * 📱 Responsive interface
 * 💾 MySQL database integration
 
@@ -66,8 +68,6 @@ The application allows users to upload, browse, and watch videos through a simpl
 mytube/
 │
 ├── Screenshots/
-│   ├── blush.png
-│   └── watching.png
 ├── assets/
 ├── uploads/
 ├── index.php
