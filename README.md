@@ -1,52 +1,52 @@
-<h1 align="center">
-  🎬 MyTube V1.0
-</h1>
+<div align="center">
 
-<p align="center">
-  A modern video sharing platform built with PHP and MySQL inspired by YouTube.
+# MyTube V1.0
+
+A modern video-sharing platform inspired by YouTube, built with **PHP** and **MySQL**, featuring video uploads, user interactions, and a responsive interface.
+
+<p>
+  <img src="https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php&logoColor=white">
+  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+  <img src="https://img.shields.io/badge/Status-Completed-00C853?style=for-the-badge">
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/PHP-8-blue?style=for-the-badge&logo=php">
-  <img src="https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql">
-  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
-</p>
+</div>
 
 ---
 
-## ✨ About Project
+## Overview
 
-MyTube is a video sharing platform inspired by YouTube and built as part of my learning journey in web development using PHP and MySQL.
-
-The application allows users to upload, browse, and watch videos through a simple and modern interface.
+MyTube is a web application developed to explore full-stack web development concepts using PHP and MySQL. Inspired by modern video-sharing platforms, the project focuses on implementing authentication, file uploads, database management, and interactive user experiences within a single application.
 
 ---
 
-## 🚀 Features
+## Features
 
-* 🔐 User authentication
-* 🎥 Video upload system
-* ▶️ Watch videos
-* 💬 Comment on videos
-* 👤 User profiles
-* 🌙 Switch between dark and light mode
-* 📱 Responsive interface
-* 💾 MySQL database integration
-
----
-
-## 🛠️ Built With
-
-* PHP Native
-* MySQL
-* HTML5
-* CSS3
-* JavaScript
-* XAMPP
+* User authentication system
+* Video upload and management
+* Video playback functionality
+* Comment system
+* User profile pages
+* Dark and light mode support
+* Responsive user interface
+* MySQL database integration
 
 ---
 
-## 📸 Screenshots
+## Technologies
+
+| Technology | Description                              |
+| ---------- | ---------------------------------------- |
+| PHP Native | Core server-side programming language    |
+| MySQL      | Relational database management system    |
+| HTML5      | Structure and content of the application |
+| CSS3       | Styling and responsive layouts           |
+| JavaScript | Interactive client-side functionality    |
+| XAMPP      | Local development environment            |
+
+---
+
+## Screenshots
 
 ### Home Page
 
@@ -62,38 +62,17 @@ The application allows users to upload, browse, and watch videos through a simpl
 
 ---
 
-## 📂 Project Structure
+## Author
 
-```bash
-mytube/
-│
-├── Screenshots/
-├── assets/
-├── uploads/
-├── index.php
-├── watch.php
-└── README.md
-```
+<p>
+<strong>Nur Islami Sabila</strong><br>
+Informatics Engineering Student from Indonesia.
+</p>
 
----
+<blockquote>
+Learning by building, growing by creating.
+</blockquote>
 
-## 🎯 Learning Goals
-
-* Understanding PHP and MySQL integration
-* Learning authentication and file uploads
-* Practicing database management
-* Building a complete web application from scratch
-
----
-
-## 👩🏻‍💻 Author
-
-**Nur Islami Sabila**
-
-Frontend Developer & Informatics Student Candidate from Indonesia 🇮🇩
-
-> "Learning by building, growing by creating."
-
----
-
-⭐ If you like this project, don't forget to give it a star.
+<p align="left">
+If you found this project helpful, consider giving it a ⭐ to support the repository.
+</p>
