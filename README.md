@@ -50,13 +50,13 @@ MyTube is a web application developed to explore full-stack web development conc
 
 ### Home Page
 
-<p align="center">
+<p align="left">
   <img src="Screenshots/home.png" width="900">
 </p>
 
 ### Watching Page
 
-<p align="center">
+<p align="left">
   <img src="Screenshots/watching.png" width="900">
 </p>
 
